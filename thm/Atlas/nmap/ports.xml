@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Oct  2 16:20:46 2021 as: nmap -sV -sS -Pn -p 3389,8080 -oA nmap/ports 10.10.179.10 -->
+<nmaprun scanner="nmap" args="nmap -sV -sS -Pn -p 3389,8080 -oA nmap/ports 10.10.179.10" start="1633206046" startstr="Sat Oct  2 16:20:46 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="3389,8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1633206046" endtime="1633206167"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.179.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http-proxy" servicefp="SF-Port8080-TCP:V=7.91%I=7%D=10/2%Time=6158BF29%P=x86_64-pc-linux-gnu%r(GetRequest,179,&quot;HTTP/1\.1\x20401\x20Access\x20Denied\r\nContent-Type:\x20text/html\r\nContent-Length:\x20144\r\nConnection:\x20Keep-Alive\r\nWWW-Authenticate:\x20Digest\x20realm=\&quot;ThinVNC\&quot;,\x20qop=\&quot;auth\&quot;,\x20nonce=\&quot;yMRxIfu25UAo10kC\+7blQA==\&quot;,\x20opaque=\&quot;gZsF5uaUYiiIpr7PXYx9GsPS0v9pCQG40Q\&quot;\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;401\x20Access\x20Denied&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;401\x20Access\x20Denied&lt;/H1&gt;The\x20requested\x20URL\x20\x20requires\x20authorization\.&lt;P&gt;&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;)%r(FourOhFourRequest,111,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html\r\nContent-Length:\x20177\r\nConnection:\x20Keep-Alive\r\n\r\n&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;404\x20Not\x20Found&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;H1&gt;404\x20Not\x20Found&lt;/H1&gt;The\x20requested\x20URL\x20nice%20ports%2C/Tri%6Eity\.txt%2ebak\x20was\x20not\x20found\x20on\x20this\x20server\.&lt;P&gt;&lt;/BODY&gt;&lt;/HTML&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="190690" rttvar="143221" to="763574"/>
+</host>
+<runstats><finished time="1633206167" timestr="Sat Oct  2 16:22:47 2021" summary="Nmap done at Sat Oct  2 16:22:47 2021; 1 IP address (1 host up) scanned in 121.90 seconds" elapsed="121.90" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

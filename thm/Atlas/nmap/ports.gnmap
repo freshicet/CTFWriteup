@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sat Oct  2 16:20:46 2021 as: nmap -sV -sS -Pn -p 3389,8080 -oA nmap/ports 10.10.179.10
+Host: 10.10.179.10 ()	Status: Up
+Host: 10.10.179.10 ()	Ports: 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/, 8080/open/tcp//http-proxy///
+# Nmap done at Sat Oct  2 16:22:47 2021 -- 1 IP address (1 host up) scanned in 121.90 seconds
